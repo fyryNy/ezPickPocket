@@ -1,0 +1,12 @@
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Last Changes:
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Model ("Humans")
+{
+	meshAndTree ("HUM_BODY_NAKED0.ASC" DONT_USE_MESH)
+	aniEnum
+	{
+		ani   ("T_STEAL"       2               ""             0.1 0.1  M. "HUM_STEALING_M01.ASC"                         F  1   19   FPS:10)
+	}
+}
