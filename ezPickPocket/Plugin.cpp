@@ -178,7 +178,16 @@ namespace GOTHIC_ENGINE {
 						return false;
 				}
 
-				if (npc->npcType != NPCTYPE_AMBIENT)
+				if (npc->npcType != 0
+#if ENGINE < Engine_G2
+						&& npc->npcType != 4
+						&& npc->npcType != 6
+#else
+						&& npc->npcType != 3
+						&& npc->npcType != 5
+						&& npc->npcType != 6
+#endif
+						)
 				{
 						return false;
 				}
